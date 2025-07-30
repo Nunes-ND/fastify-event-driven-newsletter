@@ -1,1 +1,1 @@
-console.log(`Env value ${process.env.NODE_ENV || 'production'}`);
+console.info(`Env value ${process.env.NODE_ENV || 'production'}`);
