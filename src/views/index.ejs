@@ -1,3 +1,16 @@
 <main>
-  <h1>Home</h1>
+  <div class="container">
+    <h1>Join Our Newsletter</h1>
+    <p>Subscribe to get the latest news and updates directly in your inbox.</p>
+    <form class="subscribe-form"
+        action="http://localhost:8000/newsletters/subscribe" method="post">
+      <% if (locals.error) { %>
+      <p class="error-message"><%= locals.error %></p>
+      <% } %>
+      <input class="subscribe-input" type="email" id="email" name="email"
+          placeholder="Enter your email..." required
+          value="<%= locals.email || '' %>">
+      <button class="subscribe-button" type="submit">Subscribe</button>
+    </form>
+  </div>
 </main>
