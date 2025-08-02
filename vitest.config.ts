@@ -27,6 +27,7 @@ export default defineConfig(({ mode }) => ({
 				},
 			},
 			{
+				extends: true,
 				test: {
 					name: { label: 'unit', color: 'green' },
 					include: ['tests/unit/**/*.test.ts'],

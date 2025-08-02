@@ -14,7 +14,7 @@ describe('Client routes', () => {
 
 			expect(response.statusCode).toBe(200);
 			expect(h1.length).toBe(1);
-			expect(h1.text()).toBe('Home');
+			expect(h1.text()).toBe('Join Our Newsletter');
 		});
 	});
 });
